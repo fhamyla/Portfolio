@@ -1,52 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Lora', serif;
+    background-color: white;
+    color: #032433;
 }
 
-.container {
-    margin: 50px auto;
-    max-width: 400px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h1 {
+    font-size: 2.6rem;
 }
 
-.input-field {
-    position: relative;
-    margin-bottom: 30px;
-    margin-right: 20px;
+li, button, input, p, label {
+    font-size: 2rem;
 }
 
-.input-field input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4, h5 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-head {
+    background: #032433;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+button {
+    padding: 2rem 6rem;
+    background: #032433;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
     border-radius: 5px;
-    transition: border-color 0.3s ease;
+    color: white;
 }
 
-.input-field label {
+button:hover {
+    background: #596a72;
+}
+
+nav {
+    padding: 2rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home:hover, .about:hover, .projects:hover, .contact:hover {
+    background-color: #596a72;
+    padding: 0.5rem 0.5rem;
+    border-radius: 20px;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 3.6rem;
+}
+
+.hero {
+    min-height: 90vh;
+    background: #032433;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3 {
+    padding: 5rem;
+}
+
+#about {
+    min-height: 50vh;
+    padding: 5rem 0;
+    text-align: center;
+    background: white;
+}
+
+.about-head h2 {
+    margin-bottom: 2rem;
+}
+
+#projects {
+    min-height: 50vh;
+    padding: 5rem 0;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.projects-head h2 {
+    margin-bottom: 2rem;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 25rem;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: white;
+}
+
+.card-icon img {
+    max-width: 50px;
+    margin-bottom: 1rem;
+}
+
+#contact {
+    min-height: 50vh;
+    padding: 5rem 0;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.form-wrapper {
+    background: #032433;
+    padding: 2rem;
+    width: 50%;
+    color: white;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.form-head {
+    margin-bottom: 2rem;
+}
+
+.name-form, .email-form {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.name-form label, .email-form label {
     position: absolute;
-    left: 10px;
     top: 50%;
+    left: 10px;
     transform: translateY(-50%);
-    font-size: 16px;
-    color: #999;
+    font-size: 1.6rem;
+    color: #ccc;
     transition: top 0.3s, font-size 0.3s, color 0.3s;
     pointer-events: none;
 }
 
-.input-field input:focus {
-    outline: none;
-    border-color: #007bff;
+.name-form input, .email-form input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
 }
 
-.input-field input:focus + label,
-.input-field input:valid + label {
-    top: 0;
-    font-size: 12px;
-    color: #007bff;
-    background: #fff;
+.name-form input:focus, .email-form input:focus {
+    outline: none;
+    border-color: white;
+}
+
+.name-form input:focus + label, .email-form input:focus + label {
+    top: -10px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer {
+    background: #032433;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-wrapper {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-wrapper ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.footer-wrapper li {
+    margin: 0 1rem;
+}
+
+.footer-wrapper img {
+    width: 30px;
 }

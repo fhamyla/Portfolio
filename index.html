@@ -1,23 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fami</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio of Fhamyla.">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="/icons/musical-symbol-of-letter-f.png">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>fhamyla</title>
 </head>
 <body>
-
-<div class="container">
-    <div class="input-field">
-        <input type="text" id="username" required>
-        <label for="username">Username</label>
-    </div>
-    <div class="input-field">
-        <input type="password" id="password" required>
-        <label for="password">Password</label>
-    </div>
-</div>
-
+    <header class="main-head">
+        <nav>
+            <h1 id="logo">fhamyla</h1>
+            <ul>
+                <li class="home"><a href="#home">Home</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="projects"><a href="#projects">Projects</a></li>
+                <li class="contact"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <h3>Explore my work and projects</h3>
+    </section>
+    <section id="about">
+        <header class="about-head">
+            <h2>About Me</h2>
+            <p>I'm Fhamyla, a passionate web developer with a love for creating stunning websites and applications.</p>
+        </header>
+    </section>
+    <section id="projects">
+        <header class="projects-head">
+            <h2>Projects</h2>
+            <h3>Here are some of my latest works</h3>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="icons/project1-icon.png" alt="Project 1 icon">
+                </div>
+                <h4>Project 1</h4>
+                <p>A web application for managing tasks efficiently.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="icons/project2-icon.png" alt="Project 2 icon">
+                </div>
+                <h4>Project 2</h4>
+                <p>An e-commerce website with a modern design.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="icons/project3-icon.png" alt="Project 3 icon">
+                </div>
+                <h4>Project 3</h4>
+                <p>A mobile app for tracking fitness activities.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="form-wrapper">
+            <header class="form-head">
+                <h2>Contact Me</h2>
+            </header>
+            <form>
+                <div class="name-form">
+                    <input type="text" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="email-form">
+                    <input type="email" required name="email">
+                    <label for="email">Email</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <h5>Fhamyla &copy; 2024</h5>
+            <ul>
+                <li class="fb">
+                    <a href="https://www.facebook.com/d.fhamyla" title="Facebook"><img src="icons/facebook.png" alt="Facebook"></a>
+                </li>
+                <li class="ig">
+                    <a href="https://www.instagram.com/bettymeowaugust/" title="Instagram"><img src="icons/instagram.png" alt="Instagram"></a>
+                </li>
+                <li class="gh">
+                    <a href="https://github.com/fhamyla" title="GitHub"><img src="icons/github.png" alt="GitHub"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
