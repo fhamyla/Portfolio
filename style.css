@@ -170,10 +170,11 @@ nav ul {
 }
 
 .form-head {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
-.name-form, .email-form {
+.name-form, .email-form, .message-form {
     margin-bottom: 2rem;
     position: relative;
 }
@@ -189,7 +190,18 @@ nav ul {
     pointer-events: none;
 }
 
-.name-form input, .email-form input {
+.message-form label {
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: #ccc;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+    pointer-events: none;
+}
+
+.name-form input, .email-form input, .message-form textarea {
     width: 100%;
     padding: 1rem;
     font-size: 1.6rem;
@@ -199,15 +211,21 @@ nav ul {
     color: white;
 }
 
-.name-form input:focus, .email-form input:focus {
+.name-form input:focus, .email-form input:focus, .message-form textarea:focus {
     outline: none;
     border-color: white;
 }
 
-.name-form input:focus + label, .email-form input:focus + label {
+.name-form input:focus + label, .email-form input:focus + label, .message-form textarea:focus + label,
+.name-form input:not(:placeholder-shown) + label, .email-form input:not(:placeholder-shown) + label, .message-form textarea:not(:placeholder-shown) + label {
     top: -10px;
     font-size: 1.2rem;
     color: white;
+}
+
+.message-form textarea {
+    resize: vertical;
+    height: 70px;
 }
 
 footer {
