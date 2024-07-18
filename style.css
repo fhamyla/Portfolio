@@ -165,7 +165,7 @@ nav ul {
 }
 
 #contact {
-    min-height: 50vh;
+    min-height: 90vh;
     padding: 5rem 0;
     text-align: center;
     background: #f0f0f0;
@@ -247,16 +247,22 @@ footer {
 }
 
 .footer-wrapper {
-    width: 90%;
+    width: 80%;
     margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper h5 {
+    margin: 0;
 }
 
 .footer-wrapper ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    padding: 1rem 0;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-wrapper li {
