@@ -229,9 +229,10 @@ nav ul {
 
 .name-form input:focus + label, .email-form input:focus + label, .message-form textarea:focus + label,
 .name-form input:not(:placeholder-shown) + label, .email-form input:not(:placeholder-shown) + label, .message-form textarea:not(:placeholder-shown) + label {
-    top: -10px;
+    top: -3px;
     font-size: 1.2rem;
     color: white;
+    background-color: #032433;
 }
 
 .message-form textarea {
