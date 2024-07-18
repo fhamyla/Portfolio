@@ -81,10 +81,21 @@ nav ul {
     align-items: center;
 }
 
-.home:hover, .about:hover, .projects:hover, .contact:hover {
+.home, .about, .projects, .contact {
+    position: relative;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.home:hover::after, .about:hover::after, .projects:hover::after, .contact:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
     background-color: #596a72;
-    padding: 0.5rem 0.5rem;
-    border-radius: 20px;
+    border-radius: 1px;
 }
 
 #logo {
