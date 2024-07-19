@@ -122,7 +122,7 @@ nav ul {
 
 #skills {
     min-height: 50vh;
-    padding: 5rem 0;
+    padding: 10rem 0;
     text-align: center;
     background: white;
 }
@@ -133,7 +133,7 @@ nav ul {
 
 #projects {
     min-height: 50vh;
-    padding: 5rem 0;
+    padding: 10rem 0;
     text-align: center;
     background: #f0f0f0;
 }
@@ -166,7 +166,7 @@ nav ul {
 
 #contact {
     min-height: 90vh;
-    padding: 5rem 0;
+    padding: 10rem 0;
     text-align: center;
     background: #f0f0f0;
 }
