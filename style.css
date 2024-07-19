@@ -81,13 +81,13 @@ nav ul {
     align-items: center;
 }
 
-.home, .about, .projects, .contact {
+.home, .skills, .projects, .contact {
     position: relative;
     padding: 0.5rem;
     text-decoration: none;
 }
 
-.home:hover::after, .about:hover::after, .projects:hover::after, .contact:hover::after {
+.home:hover::after, .skills:hover::after, .projects:hover::after, .contact:hover::after {
     content: '';
     position: absolute;
     left: 0;
@@ -120,14 +120,14 @@ nav ul {
     padding: 5rem;
 }
 
-#about {
+#skills {
     min-height: 50vh;
     padding: 5rem 0;
     text-align: center;
     background: white;
 }
 
-.about-head h2 {
+.skills-head h2 {
     margin-bottom: 2rem;
 }
 
