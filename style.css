@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('/font/DancingScript-VariableFont_wght.ttf');
+}
+
 html {
     font-size: 62.5%;
 }
