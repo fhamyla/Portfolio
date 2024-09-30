@@ -127,18 +127,55 @@ nav ul {
 
 #skills {
     min-height: 50vh;
-    padding: 10rem 0;
+    padding: 5rem 0;
     text-align: center;
     background: white;
-}
-
-.skills-head h2 {
+  }
+  
+  .skills-head h2 {
     margin-bottom: 2rem;
-}
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .skill, .skillc, .skillcplus, .skillcsharp, .skillblender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  .skill i {
+    font-size: 5rem;
+    margin-bottom: 0rem;
+  }
+
+  .skillc img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    margin-bottom: 0rem;
+  }
+
+  .skillcplus img, .skillcsharp img, .skillblender img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    margin-bottom: 0rem;
+  }
+  
+  .skill span {
+    font-size: 2rem;
+  }  
 
 #projects {
     min-height: 50vh;
-    padding: 10rem 0;
+    padding: 5rem 0;
     text-align: center;
     background: #f0f0f0;
 }
