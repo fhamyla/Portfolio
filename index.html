@@ -31,40 +31,33 @@
     const links = document.querySelectorAll('ul li a');
     const handleScroll = () => {
         const scrollPosition = window.scrollY || window.pageYOffset;
-        const homeBottom = homeSection.offsetTop + homeSection.offsetHeight; // Bottom of Home section
-        const skillsTop = skillsSection.offsetTop; // Top of Skills section
+        const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
+        const skillsTop = skillsSection.offsetTop;
         if (scrollPosition < homeBottom) {
-            // Within the Home section
             mainHead.classList.remove('transparent');
             links.forEach(link => link.classList.remove('transparent'));
         } else if (scrollPosition >= skillsTop - 100) {
-            // Scrolled past Skills section
             mainHead.classList.add('transparent');
             links.forEach(link => link.classList.add('transparent'));
         } else {
-            // Default state (between Home and Skills)
             mainHead.classList.remove('transparent');
             links.forEach(link => link.classList.remove('transparent'));
         }
     };
-    // Handle click on navigation links
     links.forEach(link => {
         link.addEventListener('click', (event) => {
-            const targetId = link.getAttribute('href').substring(1); // Get the target section ID
+            const targetId = link.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
-
             if (targetSection) {
-                const targetTop = targetSection.offsetTop; // Get the target section's top position
+                const targetTop = targetSection.offsetTop;
                 window.scrollTo({
                     top: targetTop,
-                    behavior: 'smooth' // Smooth scroll to the target section
+                    behavior: 'smooth'
                 });
-                event.preventDefault(); // Prevent default anchor click behavior
+                event.preventDefault();
             }
         });
     });
-
-    // Initial state check
     handleScroll();
     window.addEventListener('scroll', handleScroll);
 });

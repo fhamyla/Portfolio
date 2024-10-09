@@ -45,21 +45,19 @@ a {
     text-decoration: none;
 }
 
-/* Default (background #032433 and white text for "Home" section) */
 .main-head{
   background: #032433;
   color: white;
   position: sticky;
   top: 0px;
   z-index: 3;
-  transition: background 0.3s, color 0.3s; /* Smooth transition effect */
+  transition: background 0.3s, color 0.3s;
 }
 
 ul li a {
   color: white;
 }
 
-/* When scrolled to "Skills", "Projects", or "Contact" (transparent background and #032433 text color) */
 .main-head.transparent, ul li a.transparent{
   background: transparent;
   color: #032433;
