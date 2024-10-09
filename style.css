@@ -173,42 +173,134 @@ nav ul {
     font-size: 2rem;
   }  
 
-#projects {
-    min-height: 50vh;
-    padding: 5rem 0;
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  #projects {
+    padding-block: 5rem;
     text-align: center;
-    background: #f0f0f0;
-}
-
-.projects-head h2 {
-    margin-bottom: 2rem;
-}
-
-.cards {
     width: 90%;
     margin: auto;
+  }
+  
+  .projects-head h2 {
+    text-transform: capitalize;
+    letter-spacing: 0.025em;
+  }
+  
+  .projects-head h3 {
+    color: #555;
+    margin-bottom: 3rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 18.75rem;
+    background: var(--clr);
+    border-radius: 1.25rem;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+  }
+  
+  .box {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 1.25rem;
+  }
+  
+  .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .icon {
+    position: absolute;
+    bottom: -0.375rem;
+    right: -0.375rem;
+    width: 6rem;
+    height: 6rem;
+    background: var(--clr);
+    border-top-left-radius: 50%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-}
+    align-items: center;
+    transition: 0.3s ease;
+  }
+  
+  .icon:hover .iconBox {
+    transform: scale(1.1);
+  }
+  
+  .iconBox {
+    background: #032433;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.card {
-    flex: 1 1 25rem;
-    margin: 2rem;
-    padding: 2rem;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background: white;
-}
-
-.card-icon img {
-    max-width: 50px;
-    margin-bottom: 1rem;
-}
+  .iconBox i {
+    color: #fff;
+    font-size: 2rem;
+  }  
+  
+  .iconBox span {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .content {
+    padding: 0.938rem 0.625rem;
+    text-align: left;
+  }
+  
+  .content h3 {
+    font-size: clamp(1.5rem, 1.3909rem + 0.4364vw, 1.8rem);
+  }
+  
+  .content p {
+    margin: 0.625rem 0 1.25rem;
+    color: #565656;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.625rem;
+  }
+  
+  li {
+    text-transform: uppercase;
+    background: var(--clr-tag);
+    color: #282828;
+    padding: 0.375rem 0.625rem;
+    border-radius: 3rem;
+  }  
 
 #contact {
     min-height: 90vh;
-    padding: 10rem 0;
+    padding: 5rem 0;
     text-align: center;
     background: #f0f0f0;
 }
@@ -252,6 +344,11 @@ nav ul {
     color: #ccc;
     transition: top 0.3s, font-size 0.3s, color 0.3s;
     pointer-events: none;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
 }
 
 .name-form input, .email-form input, .message-form textarea {
