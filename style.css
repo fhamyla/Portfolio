@@ -383,6 +383,8 @@ footer {
     background: #032433;
     color: white;
     padding: 2rem 0;
+    position: absolute;
+    width: 100%;
 }
 
 .footer-wrapper {
