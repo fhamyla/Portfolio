@@ -423,3 +423,24 @@ footer {
 .footer-wrapper img {
     width: 30px;
 }
+
+@media screen and (max-width: 932px) {
+  html {
+      font-size: 45%;
+  }
+  nav {
+      text-align: center;
+  }
+  #logo {
+      padding: 2rem;
+  }
+  .form-wrapper {
+      width: 100%;
+  }
+  footer {
+      text-align: center;
+  }
+  footer h5 {
+      padding-bottom: 3rem;
+  }
+}
